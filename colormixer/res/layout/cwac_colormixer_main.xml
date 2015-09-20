@@ -22,8 +22,7 @@
     android:layout_alignTop="@id/redLabel"
     android:layout_toRightOf="@id/redLabel"
     android:layout_marginLeft="4dip"
-    android:layout_marginRight="8dip"
-  />
+    android:layout_marginRight="8dip" />
   <TextView android:id="@+id/greenLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -40,8 +39,7 @@
     android:layout_alignTop="@id/greenLabel"
     android:layout_toRightOf="@id/greenLabel"
     android:layout_marginLeft="4dip"
-    android:layout_marginRight="8dip"
-  />
+    android:layout_marginRight="8dip" />
   <TextView android:id="@+id/blueLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -58,6 +56,5 @@
     android:layout_alignTop="@id/blueLabel"
     android:layout_toRightOf="@id/blueLabel"
     android:layout_marginLeft="4dip"
-    android:layout_marginRight="8dip"
-  />
+    android:layout_marginRight="8dip" />
 </merge>
