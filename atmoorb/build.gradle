@@ -17,10 +17,10 @@ android {
 
     defaultConfig {
         applicationId "evilcorp.atmoorb"
-        minSdkVersion 21
+        minSdkVersion 18
         targetSdkVersion 21
         versionCode 1
-        versionName "0.04"
+        versionName "0.05"
     }
     sourceSets {
         main {
