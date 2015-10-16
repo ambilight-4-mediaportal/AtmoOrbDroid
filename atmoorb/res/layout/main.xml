@@ -44,11 +44,25 @@
         android:editable="true"
         android:text="24" />
 
-    <Button
-        android:layout_width="130dp"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Turn off Orbs"
-        android:id="@+id/btnTurnOffLights"
-        android:onClick="btnTurnOffLights" />
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Turn off Orbs"
+            android:id="@+id/btnTurnOffLights"
+            android:onClick="btnTurnOffLights" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Turn on Orbs"
+            android:id="@+id/button"
+            android:onClick="btnTurnOnLights"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
 
 </LinearLayout>

@@ -255,4 +255,9 @@ public class Main extends Activity {
         String OrbLedCount = String.valueOf(editTextOrbLedCount.getText());
         setColor(0, 0, 0, OrbID, OrbLedCount, 1);
     }
+
+    public void btnTurnOnLights(View v) {
+        int argb = mixer.getColor();
+        setColor(Color.red(argb), Color.green(argb), Color.blue(argb), cOrbIDs, cOrbLedCount, 2);
+    }
 }
