@@ -3,4 +3,4 @@ Android app for use with AtmoOrb lamps
 
 ## Requirements
 
-Android 5.0 or higher
+Android 4.4 or higher
