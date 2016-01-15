@@ -240,13 +240,17 @@ public class ColorPicker extends View {
         }
 
         int color = getColor();
+        sendApiColorCommand(color);
+    }
+
+    public void sendApiColorCommand(int color)
+    {
         cRed = Color.red(color);
         cGreen = Color.green(color);
         cBlue = Color.blue(color);
         cCommand = "static";
         new SendMultiCastData().execute("");
     }
-
     private void drawPointerArrow(Canvas canvas) {
 
         int centerX = getWidth() / 2;

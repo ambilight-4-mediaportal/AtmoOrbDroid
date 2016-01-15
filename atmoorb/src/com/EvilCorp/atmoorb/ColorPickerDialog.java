@@ -10,6 +10,8 @@ public class ColorPickerDialog extends AlertDialog {
 
     private ColorPicker colorPickerView;
     private final OnColorSelectedListener onColorSelectedListener;
+    private int oldColor;
+
 
     public ColorPickerDialog(Context context, int initialColor, String cOrbIDs, String cOrbLedCount, OnColorSelectedListener onColorSelectedListener) {
         super(context);
@@ -22,6 +24,7 @@ public class ColorPickerDialog extends AlertDialog {
 
         colorPickerView = new ColorPicker(context);
         colorPickerView.setColor(initialColor);
+        oldColor = initialColor;
         colorPickerView.cOrbIDs = cOrbIDs;
         colorPickerView.cOrbLedCount = cOrbLedCount;
 
@@ -42,6 +45,7 @@ public class ColorPickerDialog extends AlertDialog {
                     onColorSelectedListener.onColorSelected(selectedColor);
                     break;
                 case BUTTON_NEGATIVE:
+                    colorPickerView.sendApiColorCommand(oldColor);
                     dialog.dismiss();
                     break;
             }
