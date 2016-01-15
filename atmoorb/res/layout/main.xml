@@ -65,4 +65,16 @@
             android:layout_gravity="right|center_vertical" />
     </FrameLayout>
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></TableRow>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:id="@+id/btnShowColorWheel"
+        android:background="@mipmap/ic_colorwheel"
+        android:layout_gravity="center_horizontal"
+        android:onClick="btnShowColorPicker" />
+
 </LinearLayout>

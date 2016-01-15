@@ -260,4 +260,15 @@ public class Main extends Activity {
         int argb = mixer.getColor();
         setColor(Color.red(argb), Color.green(argb), Color.blue(argb), cOrbIDs, cOrbLedCount, 2);
     }
+
+    public void btnShowColorPicker(View v) {
+        ColorPickerDialog colorPickerDialog = new ColorPickerDialog(this, mixer.getColor(), cOrbIDs, cOrbLedCount, new ColorPickerDialog.OnColorSelectedListener() {
+
+            @Override
+            public void onColorSelected(int color) {
+                mixer.setColor(color);
+            }
+        });
+        colorPickerDialog.show();
+    }
 }

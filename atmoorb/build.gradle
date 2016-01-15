@@ -13,14 +13,13 @@ dependencies {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.0"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "evilcorp.atmoorb"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 21
-        versionCode 1
-        versionName "0.06"
+        versionName "0.07"
     }
     sourceSets {
         main {
